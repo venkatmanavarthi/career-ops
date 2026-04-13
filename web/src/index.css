@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 45 20% 97%;
+  --foreground: 215 30% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 30% 14%;
+  --primary: 212 63% 17%;
+  --primary-foreground: 40 33% 97%;
+  --secondary: 42 40% 92%;
+  --secondary-foreground: 214 30% 20%;
+  --muted: 35 25% 93%;
+  --muted-foreground: 214 16% 39%;
+  --accent: 28 48% 90%;
+  --accent-foreground: 214 24% 18%;
+  --destructive: 0 68% 42%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 30 17% 86%;
+  --input: 30 17% 86%;
+  --ring: 212 63% 17%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(190, 169, 140, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 252, 247, 1) 0%, rgba(248, 244, 238, 1) 100%);
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: hsl(var(--foreground));
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
